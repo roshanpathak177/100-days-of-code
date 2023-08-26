@@ -11,4 +11,5 @@ public class KK_shadowing {//shadowing in java is a practice of using two variab
     static void fun() {
         System.out.println(x);
     }
+
 }

@@ -3,23 +3,36 @@ import java.util.Scanner;
 
 public class KK_arrays {
     public static void main(String[] args) {
-        //Q:store 5 roll no.s
         //syntax
-        // datatype[] variable_name =new datatype[size]
-        int[] rnos =new int[5];
-        //or directly
-        int[] rnos2 ={23, 12, 56, 1, 3};
+        //datatype[] variableName = new datatype[size];
+        //Q:store 5 roll no.s
+        int[] rollNos = new int[5];
+        int[] rnos = {1,2,3,43,65};
 
-        System.out.println(rnos2[1]);
+        int[] ros;//declaration of array. ros is getting defined in the stack
+        ros = new int[5];//actual memory creation is happening here.(heap memory// )
         Scanner in = new Scanner(System.in);
-        int[] arr = new int[5];
-        //input using for loops
-        for (int i = 0; i <arr.length; i ++){
-            arr[i] = in.nextInt();
-        }
+        int[] arr = new int[10];
 
-        for (int i = 0; i <arr.length; i ++){
-            System.out.print(Arrays.toString(arr));
+//        //input using for loops
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i]= in.nextInt();
+//        }
+//        for (int i = 0; i < arr.length; i++) {
+//            System.out.print(arr[i] + " ");
+//        }
+
+        //Array of objects
+        String[] str = new String[4];
+        for (int i = 0; i < str.length; i++) {
+            str[i]= in.next();
         }
+        System.out.println(Arrays.toString(str));
+
+        //modify
+        str[1] = "Roshan";
+        System.out.println(Arrays.toString(str));
+
+
     }
 }
