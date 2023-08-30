@@ -21,6 +21,12 @@ public class KK_Classes {
         String name;
         float marks;
 
+        //you cannot do garbage collection in java manually, but you can tell java that when you destroy an object, do this:
+        @Override
+        protected void finalize() throws Throwable {
+            System.out.println("this item is destroyed");
+        }
+
         void greeting(){
             System.out.println("Hello! My name is " + name);
         }
