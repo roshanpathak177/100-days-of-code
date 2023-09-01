@@ -12,7 +12,7 @@ public class InheritanceMain {
         // this also means, that the ones you are trying to access should be initialised
         // but here, when the obj itself is of type parent class, how will you call the constructor of child class
         //that is why error below
-        BoxWeight box4 = new Inheritance.Box(3, 5, 7);
-        System.out.println(box4.l);
+        //BoxWeight box4 = new Inheritance.Box(3, 5, 7);
+        //System.out.println(box4.l);
     }
 }
